@@ -17,3 +17,23 @@ employee_one.name = "John"
 employee_two.name = "Deer"
 print(employee_one.name)
 print(employee_two.name)
+
+
+
+
+#My own example
+class Dog:
+    breed = "Boston Terrier"
+    def bark():
+        print("Wuuofff")
+
+#creating bostons
+iggy = Dog()
+nacho = Dog()
+print(nacho.breed)
+Dog.breed = "Chihuahua"
+nacho.breed="Boston"
+print(nacho.breed)
+nacho.age = 5
+print(nacho.age)
+kichi = Dog()
