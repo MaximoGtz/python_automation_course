@@ -102,18 +102,6 @@ books = [book1, book2, book3, book4, book5, book6, book7, book8, book9, book10]
 library = Library()
 library.add_books(books)
 customer1 = Customer("Maximo")
-# library.borrow_book(customer1, "The Divine Comedy")
-# library.borrow_book(customer1, "1984")
-# l = len(library.borrow_book(customer1, "Invisible Man"))
-
-# library.get_aviable_books()
-# customer1.watch_books()
-# print("/"*50)
-# library.return_book(customer1, "The Divine Comedy")
-# library.return_book(customer1, "1984")
-
-# library.get_aviable_books()
-# customer1.watch_books()
 while True:
     print("What would you like to do?")
     print("1. Watch avaiable books")
