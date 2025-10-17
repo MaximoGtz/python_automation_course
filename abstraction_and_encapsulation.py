@@ -101,24 +101,38 @@ book10 = Book("Invisible Man", "Ralph Ellison", 1952)
 books = [book1, book2, book3, book4, book5, book6, book7, book8, book9, book10]
 library = Library()
 library.add_books(books)
-#finish FILL LIBRARY
-
 customer1 = Customer("Maximo")
-#customer1.get_book(book1)
-#customer1.get_book(book2)
-#customer1.watch_books()
-#customer1.return_book("The Divine Comedy")
-#customer1.watch_books()
+# library.borrow_book(customer1, "The Divine Comedy")
+# library.borrow_book(customer1, "1984")
+# l = len(library.borrow_book(customer1, "Invisible Man"))
+
+# library.get_aviable_books()
 # customer1.watch_books()
-library.borrow_book(customer1, "The Divine Comedy")
-library.borrow_book(customer1, "1984")
-l = len(library.borrow_book(customer1, "Invisible Man"))
+# print("/"*50)
+# library.return_book(customer1, "The Divine Comedy")
+# library.return_book(customer1, "1984")
 
-library.get_aviable_books()
-customer1.watch_books()
-print("/"*50)
-library.return_book(customer1, "The Divine Comedy")
-library.return_book(customer1, "1984")
-
-library.get_aviable_books()
-customer1.watch_books()
+# library.get_aviable_books()
+# customer1.watch_books()
+while True:
+    print("What would you like to do?")
+    print("1. Watch avaiable books")
+    print("2. Watch your books")
+    print("3. Borrow a book")
+    print("4. Return a book")
+    print("5. Exit")
+    user_choice = int(input())
+    if user_choice == 1:
+        library.get_aviable_books()
+    elif user_choice == 2:
+        customer1.watch_books()
+    elif user_choice == 3:
+        print("Wich book do you want?")
+        book_text = input()
+        library.borrow_book(customer1, book_text)
+    elif user_choice == 4:
+        print("Wich book do you want to return?")
+        book_text = input()
+        library.return_book(customer1, book_text)
+    elif user_choice == 5:
+        quit()
