@@ -5,5 +5,11 @@ class SavingsAccount(abstract.Schema):
       self.balance = balance
 
 class User(abstract.Schema):
-   pass
+   __accounts = []
+   def __init__(self, name):
+      self.name = name
+class DataBase(abstract.Schema):
+   def __init__(self):
+      
+
 
