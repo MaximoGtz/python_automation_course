@@ -10,7 +10,7 @@ class Trainee(Employee):
         self.number_of_working_hours = 45
 
     #You can override functions when you inherit, but also, you can acceed to the function of the father if you need to, using the super() method
-    def reset_number_of_working_hours(self):
+    def reset_number_of_working_hours():
         super().set_number_of_working_hours()
 
 trainee1 = Trainee()
